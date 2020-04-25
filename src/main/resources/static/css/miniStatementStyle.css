@@ -1,0 +1,41 @@
+.parent {
+  position: relative;
+  width: 100%;
+}
+.one, .two {
+  position: absolute;
+  height: 500px;
+  width: 65%;
+}
+.one {
+  left: 0;
+  top: 0;
+ background-color: white;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); 
+}
+.two {
+  right: 0;
+  top: 0;
+   background-color: #cca4a4ab;
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
+}
+.one a{
+	margin-left:200px;
+	color:black;
+	font-size:28px;
+	align:center;
+	 position:relative; 
+    top:150px;
+}
+.parent img {
+	margin-top:100px;
+	float:right;
+	margin-right:100px;
+  width: 300px;
+
+}
+.w3-allerta {
+  font-family: "Allerta Stencil", Sans-serif;
+}

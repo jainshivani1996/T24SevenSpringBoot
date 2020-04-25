@@ -1,0 +1,49 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {font-family: Verdana, sans-serif;}
+#nav{
+	
+  background-color:#a95858;
+  height:75px;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left:720px;
+}
+#nav li{
+	float:right;
+	margin-top: 18px;
+	font-weight:bold;
+}
+#logo{
+    
+    float: left;
+    margin-left:20px;
+}
+
+li a {
+  display: inline-block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: bold;
+}
+
+#nav ul li a:hover {
+  background-color:rgba(255, 99, 71, 0.4);
+}
+.active {
+  background-color: white;
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

@@ -1,0 +1,13 @@
+.tab{
+	align:center;
+}
+.footer {
+    width: 100%;
+    background-color: #9ACD32;
+    color: black;
+
+    text-align: center;
+    padding: 1px 0;
+    font-family: sans-serif;
+        margin-top:350px;
+}

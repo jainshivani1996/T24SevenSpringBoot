@@ -1,0 +1,103 @@
+
+.hero
+{
+height:75%;
+width:100%;
+margin-top: -80px;
+background-image :url('https://images.unsplash.com/photo-1462899006636-339e08d1844e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+background-position:center;
+background-size:cover;
+
+
+}
+.form-box
+{
+width:380px;
+height:430px;;
+position:relative;
+margin:6% auto;
+background: #2e3031ad;
+padding:5px;
+overflow:hidden;
+border: 3px solid white;
+margin-top:85px;
+}
+.button-box
+{
+width:300px;
+margin:10px auto;
+position:relative;
+
+
+border-radius:30px;
+}
+.toggle-btn
+{
+padding:15px 15px;
+cursor:pointer;
+background:transparent;
+border:0;
+border-radius:30px;
+background-image: linear-gradient(to right, #fff947 0%, #fcf997 51%, #fff947 100%);
+
+outline:none;
+position:relative;
+margin:20px;
+    margin-left: 80
+}
+#btn{
+top:0;
+left:0;
+
+width:110px;
+
+
+border-radius:30px;
+transition:.5s;
+}
+.input-group{
+top:120px;
+position:absolute;
+width:280px;
+transition:.5s;
+}
+.input-field
+{
+width:100%;
+padding:10px 0;
+margin:5px 0px;
+border-left:0px;
+border-top:0;
+border-right:0;
+border-bottom:1px solid #999;
+outline:none;
+background:transparent;
+padding:15px;
+    margin-top: -10px;
+    font-size: large;
+ color: white;
+
+}
+.submit-btn
+{
+width:85%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+margin:auto;
+background-image: linear-gradient(to right, #fff947 0%, #fcf997 51%, #fff947 100%);
+
+border:0;
+outline:none;
+border-radius:30px;
+margin-top:30px;
+}
+
+#login
+{
+left:50px;
+}
+#register{
+left:450px;
+}
+
