@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Updat Phone Numbere</title>
+<title>Update Phone Number</title>
 <link href="<c:url value="/resources/static/css/style.css"/>"
 	rel="stylesheet">
 	<link href="<c:url value="/resources/static/css/footerStyle.css"/>"

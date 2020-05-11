@@ -2,10 +2,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Update Page</title>
+<title>Update Details</title>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Update Email</title>
 <link  href="<c:url value ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>"
 	rel="stylesheet" >
 	<link href="<c:url value="/resources/static/css/footerStyle.css"/>"

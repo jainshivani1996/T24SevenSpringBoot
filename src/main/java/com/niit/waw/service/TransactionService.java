@@ -1,5 +1,6 @@
 package com.niit.waw.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,8 @@ public class TransactionService {
 	public List<Transaction> findAllByAccountNoOrderByTransDateDesc(long accountNo) {
 		return transRepo.findAllByAccountNoOrderByTransDateDesc(accountNo);
 	}
-
-	
+	public Transaction findFirstByAccountNoOrderByTransDateDesc(long accountNo) {
+		return transRepo.findFirstByAccountNoOrderByTransDateDesc(accountNo);
+	}
 
 }

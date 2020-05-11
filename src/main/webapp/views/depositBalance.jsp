@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fund Transfer</title>
-<link href="<c:url value="/resources/static/css/transferStyle.css"/>"
+<link href="<c:url value="/resources/static/css/transferStyle1.css"/>"
 	rel="stylesheet">
 	<link href="<c:url value="/resources/static/css/main.css"/>"
 	rel="stylesheet">
@@ -79,7 +79,7 @@
    <center> <h1>ADD PAYEE</h1></center>
     <form:form id="depositform" action="depositBalanceAccount"
 		method="post" modelAttribute="customer">
-    <input type="text" name="accountNo" placeholder="Payee Account Number" required/>
+    <input type="number" name="accountNo" placeholder="Payee Account Number" required/>
     <input type="text" name="ifscCode" placeholder="Payee IFSC" required/>
     <input type="text" name="name" placeholder="Nick name" required/>
     

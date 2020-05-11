@@ -2,10 +2,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Update Page</title>
+<title>Add Balance</title>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Update Email</title>
 <script type="text/javascript">
     window.onload = function () {
         var txtPassword = document.getElementById("newPassword");
@@ -30,7 +29,7 @@
 		<link href="<c:url value="/resources/static/css/nav2.css"/>"
 	rel="stylesheet">
 	
-		<link href="<c:url value="/resources/static/css/addBalance.css"/>"
+		<link href="<c:url value="/resources/static/css/addBalance1.css"/>"
 	rel="stylesheet">
 	<script src="<c:url value="/resources/static/js/jquery-3.3.0.min.js" />"></script>
 <script src="<c:url value="/resources/static/js/bootstrap.min.js" />"></script>
@@ -113,10 +112,10 @@
 
 	<form:form id="login" class="input-group" action="addAccountBalance"
 		method="post" modelAttribute="account">
-    <input type="text" name="debitCard" class="input-field" placeholder="Debit Card Number" required/>
-    <input type="text" name="cvv" class="input-field" placeholder="CVV Number" required/>
-    <input type="text" name="pin" class="input-field" placeholder="Debit Card Pin" required/>
-     <input type="text" name="currentBal" class="input-field" placeholder="Amount" required/>
+    <input type="number" name="debitCard" class="input-field" placeholder="Debit Card Number" required/>
+    <input type="number" name="cvv" class="input-field" placeholder="CVV Number" required/>
+    <input type="password" name="pin" class="input-field" placeholder="Debit Card Pin" required/>
+     <input type="number" name="currentBal" class="input-field" placeholder="Amount" required/>
     
     <input type="submit" class="submit-btn" name="signup_submit" value="ADD" />
     <div style="color:white">${message}</div>

@@ -15,8 +15,7 @@ public class MappingController {
 		@RequestMapping("/customer/about")
 		public String showAbout(ModelMap theModel)
 		{
-			Customer theCustomer = new Customer();
-			theModel.addAttribute("customer",theCustomer);
+	
 			return "about";
 		}
 		
@@ -24,8 +23,7 @@ public class MappingController {
 		@RequestMapping("/home")
 		public String showHome(ModelMap theModel)
 		{
-			Customer theCustomer = new Customer();
-			theModel.addAttribute("customer",theCustomer);
+		
 			return "customerDashboard";
 		}
 		
@@ -34,16 +32,14 @@ public class MappingController {
 		@RequestMapping("/adminHome")
 		public String showAdminHome(ModelMap theModel)
 		{
-			Customer theCustomer = new Customer();
-			theModel.addAttribute("customer",theCustomer);
+			
 			return "adminDashboard";
 		}
 		//mapping to contact page
 		@RequestMapping("/customer/contact")
 		public String showContact(ModelMap theModel)
 		{
-			Customer theCustomer = new Customer();
-			theModel.addAttribute("customer",theCustomer);
+		
 			return "contact";
 		}
 		

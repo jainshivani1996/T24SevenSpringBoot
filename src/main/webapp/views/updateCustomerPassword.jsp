@@ -2,10 +2,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Update Page</title>
+<title>Update Password</title>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Update Details</title>
 <script type="text/javascript">
     window.onload = function () {
         var txtPassword = document.getElementById("newPassword");

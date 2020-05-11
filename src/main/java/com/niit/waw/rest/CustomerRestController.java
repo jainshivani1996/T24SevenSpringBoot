@@ -1,6 +1,7 @@
 package com.niit.waw.rest;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,12 +25,14 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.waw.model.Account;
 import com.niit.waw.model.Customer;
 import com.niit.waw.model.CustomerList;
+import com.niit.waw.model.Transaction;
 import com.niit.waw.model.User;
 import com.niit.waw.repository.AccountRepository;
 import com.niit.waw.repository.CustomerRepository;
 import com.niit.waw.repository.UserRepository;
 import com.niit.waw.service.AccountService;
 import com.niit.waw.service.CustomerService;
+import com.niit.waw.service.TransactionService;
 import com.niit.waw.service.UserService;
 
 @CrossOrigin(origins = "*")
@@ -53,6 +56,8 @@ public class CustomerRestController {
 	UserService userService;
 	@Autowired
 	UserRepository urepo;
+	@Autowired
+	TransactionService transService;
 	
 	@GetMapping("/customers") 
 	public List<CustomerList> displayCustomerList(Customer c1)
@@ -69,6 +74,11 @@ public class CustomerRestController {
 			customerList.setFirstName(c.getFirstName());
 			customerList.setLastName(c.getLastName());
 			customerList.setEmail(c.getEmail());
+			customerList.setPhoneNo(c.getPhoneNo());
+			customerList.setAccountNo(c.getAccount().getAccountNo());
+
+			
+			
 			
 			cl.add(customerList);
 		}
@@ -87,7 +97,17 @@ public class CustomerRestController {
 			customerList.setFirstName(c.getFirstName());
 			customerList.setLastName(c.getLastName());
 			customerList.setEmail(c.getEmail());
-			
+			customerList.setPhoneNo(c.getPhoneNo());
+			customerList.setAccountNo(c.getAccount().getAccountNo());
+		
+			String s=c.getCustomerId();
+			Customer cust=service.findByCustomerId(s);
+		
+			long acc=cust.getAccount().getAccountNo();
+			Transaction t=transService.findFirstByAccountNoOrderByTransDateDesc(acc);
+			Date d=t.getTransDate();
+			System.out.println(d);
+			customerList.setTransDate(d);
 		return customerList;
 	}
 	

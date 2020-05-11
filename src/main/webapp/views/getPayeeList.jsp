@@ -80,7 +80,7 @@
 </div>
 	
 	<center>
-	<h1>Mini Statement</h1>
+	<h1>Beneficiary List</h1>
 </center>
 	<p>
 		<%

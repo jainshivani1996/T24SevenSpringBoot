@@ -46,7 +46,7 @@ public class LoginController
 		{
 		if(usr.getRole().equalsIgnoreCase("C"))
 		{	
-			((HttpServletRequest) req).getSession().setAttribute("user", usr);
+
 			req.getSession().setAttribute("user", usr);	
 			model = new ModelAndView("customerDashboard");
 			model.addObject("usr", usr);

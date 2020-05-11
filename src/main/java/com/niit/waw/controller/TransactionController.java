@@ -194,7 +194,7 @@ public class TransactionController {
 			System.out.println(acc.getCurrentBalance());
 			int currentBal=Integer.parseInt(req.getParameter("balance"));
 			
-			if(theCustomer.getAccount().getCurrentBalance()>=currentBal) {
+			if(theCustomer.getAccount().getCurrentBalance()>=currentBal && currentBal!=0) {
 			int depositerBalance=theCustomer.getAccount().getCurrentBalance()-currentBal;
 			int bal=currentBal+acc.getCurrentBalance();
 			theCustomer.getAccount().setCurrentBalance(depositerBalance);
@@ -251,7 +251,7 @@ public class TransactionController {
 			Customer cust=customerService.get(custId);
 			
 			int currentBal=Integer.parseInt(req.getParameter("balance"));
-			if(theCustomer.getAccount().getCurrentBalance()>=currentBal) {
+			if(theCustomer.getAccount().getCurrentBalance()>=currentBal && currentBal!=0) {
 				int bal=theCustomer.getAccount().getCurrentBalance()-currentBal;
 				int balance=cust.getAccount().getCurrentBalance()+currentBal;
 				theCustomer.getAccount().setCurrentBalance(bal);

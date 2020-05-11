@@ -5,7 +5,6 @@
 <title>Change Pin</title>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Update Email</title>
 <script type="text/javascript">
 window.onload = function () {
     var txtPassword = document.getElementById("pin");
@@ -28,7 +27,7 @@ window.onload = function () {
 	rel="stylesheet">
 		<link href="<c:url value="/resources/static/css/nav2.css"/>"
 	rel="stylesheet">
-		<link href="<c:url value="/resources/static/css/addBalance.css"/>"
+		<link href="<c:url value="/resources/static/css/addBalance1.css"/>"
 	rel="stylesheet">
 	<script src="<c:url value="/resources/static/js/jquery-3.3.0.min.js" />"></script>
 <script src="<c:url value="/resources/static/js/bootstrap.min.js" />"></script>
@@ -101,17 +100,17 @@ window.onload = function () {
 <div class="form-box">
 <div class="button-box">
 <div id="btn"></div>
-<button type="button" class="toggle-btn" onclick="login()">Generate PIN</button>
+<button type="button" class="toggle-btn" onclick="login()">Change ATM Pin</button>
 
 </div>
 
 	<form:form id="login" class="input-group" action="generatePinForm"
 		method="post" modelAttribute="customer">
-    <input type="text" name="accountNo" class="input-field" placeholder="Account Number" />
-    <input type="text" name="debitCard" class="input-field" placeholder="Debit Card Number" />
-    <input type="text" name="cvv" class="input-field" placeholder="CVV" />
-     <input type="text" name="pin" class="input-field" placeholder="Pin" id="pin" />
-     <input type="text" name="confirmPin" class="input-field" placeholder="Re enter Pin" id="confirmPin"/>
+    <input type="number" name="accountNo" class="input-field" placeholder="Account Number" />
+    <input type="number" name="debitCard" class="input-field" placeholder="Debit Card Number" />
+    <input type="number" name="cvv" class="input-field" placeholder="CVV" />
+     <input type="password" name="pin" class="input-field" placeholder="Pin" id="pin" />
+     <input type="password" name="confirmPin" class="input-field" placeholder="Re enter Pin" id="confirmPin"/>
     <input type="submit" class="submit-btn" name="signup_submit" value="Generate" />
     <div style="color:white">${message}</div>
     <div>${error}</div></form:form>

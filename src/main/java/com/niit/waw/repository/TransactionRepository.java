@@ -17,4 +17,8 @@ List<Transaction> findAllByAccountNo(Long accountNo);
 
 List<Transaction> findAllByAccountNoOrderByTransDateDesc(Long accountNo);
 //List<Transaction> findTop10OrderByTransDateDesc(Long accountNo);
+
+Transaction findFirstByAccountNoOrderByTransDateDesc(Long accountNo);
 }
+
+

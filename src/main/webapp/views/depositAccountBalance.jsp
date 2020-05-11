@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fund Transfer</title>
-<link href="<c:url value="/resources/static/css/transferStyle.css"/>"
+<link href="<c:url value="/resources/static/css/transferStyle1.css"/>"
 	rel="stylesheet">
 	<link href="<c:url value="/resources/static/css/main.css"/>"
 	rel="stylesheet">
@@ -81,7 +81,7 @@
     <form:form id="depositform" action="depositAmount"
 		method="post" modelAttribute="account">
     <input type="text" id="ac" name="ac" value="<%= request.getParameter("payeeAccount") %>" placeholder="Payee Account Number" readonly="readonly" required/>
-    <input type="text" name="balance" placeholder="Deposit Amount" />
+    <input type="number" min="1" name="balance" placeholder="Deposit Amount" />
 
     
     

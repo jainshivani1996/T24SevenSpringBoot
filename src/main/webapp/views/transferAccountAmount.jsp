@@ -2,10 +2,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Update Page</title>
+<title>Fund Transfer</title>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Update Email</title>
 <link  href="<c:url value ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>"
 	rel="stylesheet" >
 	<link href="<c:url value="/resources/static/css/footerStyle.css"/>"
@@ -16,7 +15,7 @@
 		<link href="<c:url value="/resources/static/css/nav2.css"/>"
 	rel="stylesheet">
 	
-	<link href="<c:url value="/resources/static/css/addBalance.css"/>"
+	<link href="<c:url value="/resources/static/css/addBalance1.css"/>"
 	rel="stylesheet">
 	<script src="<c:url value="/resources/static/js/jquery-3.3.0.min.js" />"></script>
 <script src="<c:url value="/resources/static/js/bootstrap.min.js" />"></script>
@@ -25,9 +24,6 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-
-
 </head>
 <body>
 <div id="header">
@@ -100,7 +96,7 @@
 <input type="text"  id="customerId" value="${cust.customerId}" name="customerId" class="input-field" readonly="readonly">
 
 <br>
-<input type="text"  id="balance"  name="balance" class="input-field" placeholder="Enter Amount" required>
+<input type="number"  min="1" id="balance"  name="balance" class="input-field" placeholder="Enter Amount" required>
 
 <button type="submit" class="submit-btn">Transfer</button><br>
 <div style="color:red" style= "font-size:14px">${msg}</div>
